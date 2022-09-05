@@ -12,6 +12,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
+      - tar cvf my-app.tar target  appspec.yml
 artifacts:
   files:
     - target/my-app-1.0-SNAPSHOT.jar
